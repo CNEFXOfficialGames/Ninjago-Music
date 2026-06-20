@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ninjago-Music</title>
 
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle at top, #1a0000, #000);
+  color: white;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+header p {
+  opacity: 0.7;
+}
+
+/* SEARCH */
+.search {
+  width: 90%;
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1a1a1a;
+  color: white;
+  outline: none;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: #111;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: red;
+  box-shadow: 0 0 15px red;
+}
+
+/* LABEL */
+.label {
+  text-align: center;
+  opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎧 Ninjago-Music</h1>
+  <p>Trending soundtracks</p>
+</header>
+
+<input class="search" type="text" placeholder="Search songs..." onkeyup="searchSongs(this.value)">
+
+<div class="label">🔥 Trending (Top 5)</div>
+
+<div class="grid" id="grid"></div>
+
+<!-- MUSIC DATABASE -->
+<script src="soundtracks.js"></script>
+
+<script>
+
+function render(list) {
+  const grid = document.getElementById("grid");
+  grid.innerHTML = "";
+
+  list.slice(0, 5).forEach(song => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerText = song.title;
+
+    card.onclick = () => {
+      window.open(song.url, "_blank");
+    };
+
+    grid.appendChild(card);
+  });
+}
+
+function searchSongs(value) {
+  const filtered = songs.filter(song =>
+    song.title.toLowerCase().includes(value.toLowerCase())
+  );
+
+  render(filtered);
+}
+
+// INIT
+render(songs);
+
+</script>
+
+</body>
+</html>
