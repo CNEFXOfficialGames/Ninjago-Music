@@ -16,24 +16,24 @@ const songs = [
     url: "https://www.youtube.com/watch?v=AgYl0zHsy_A"
   },
   {
-    title: "Ninjago Battle Music",
-    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+    title: "Weekend Whip (Season 5)",
+    url: "https://www.youtube.com/watch?v=UZsjNmF_ZII"
   },
   {
-    title: "Ninjago Battle Music",
-    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+    title: "Weekend Whip (Season 6)",
+    url: "https://www.youtube.com/watch?v=SgL5JFsMyNc"
   },
   {
-    title: "Ninjago Battle Music",
-    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+    title: "Weekend Whip (Season 7)",
+    url: "https://www.youtube.com/watch?v=tNI01U1sGiE"
   },
   {
-    title: "Ninjago Battle Music",
-    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+    title: "Weekend Whip (Season 8,9,10)",
+    url: "https://www.youtube.com/watch?v=oPKAAXTz3Gg"
   },
   {
-    title: "Ninjago Battle Music",
-    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+    title: "Weekend Whip (Season 11)",
+    url: "https://www.youtube.com/watch?v=5pPRBhEsT3M"
   },
   {
     title: "Ninjago Battle Music",
