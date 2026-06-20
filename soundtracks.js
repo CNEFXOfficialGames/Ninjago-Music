@@ -4,8 +4,8 @@ const songs = [
     url: "https://www.youtube.com/watch?v=PFQs2iHi3Ew"
   },
   {
-    title: "Kai Theme",
-    url: "https://www.youtube.com/results?search_query=kai+ninjago+theme"
+    title: "Weekend Whip (Ninjago theme song)",
+    url: "https://www.youtube.com/watch?v=TMw9UNXVDG0"
   },
   {
     title: "Jay Theme",
