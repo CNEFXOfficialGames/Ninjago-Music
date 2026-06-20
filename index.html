@@ -9,82 +9,88 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: radial-gradient(circle at top, #1a0000, #000);
-  color: white;
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #3a0000, #000);
+  overflow: hidden;
 }
 
-/* HEADER */
-header {
-  padding: 50px 20px;
+/* GLOW BACKGROUND EFFECT */
+.glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: red;
+  filter: blur(200px);
+  opacity: 0.15;
+  border-radius: 50%;
 }
 
-header h1 {
-  font-size: 40px;
-  margin: 0;
-}
-
-header p {
-  opacity: 0.7;
-}
-
-/* BUTTON GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* CARD BUTTON */
+/* MAIN CARD */
 .card {
-  background: #111;
-  padding: 25px;
-  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  padding: 50px 40px;
+  background: rgba(0, 0, 0, 0.6);
   border: 1px solid #333;
-  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* TITLE */
+h1 {
+  margin: 0;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+/* SUBTEXT */
+p {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* BUTTON */
+a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 24px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
   transition: 0.2s;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px red;
-  border-color: red;
+a:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px red;
 }
 
-/* LINK STYLE */
-a {
-  color: white;
-  text-decoration: none;
+/* SMALL FOOTER TEXT */
+small {
+  display: block;
+  margin-top: 20px;
+  opacity: 0.4;
 }
 </style>
 </head>
 
 <body>
 
-<header>
+<div class="glow"></div>
+
+<div class="card">
   <h1>🎧 Ninjago-Music</h1>
-  <p>A collection of legendary Ninjago soundtracks</p>
-</header>
+  <p>The ultimate Ninjago soundtrack collection</p>
 
-<div class="grid">
+  <a href="music.html">Enter Music Library</a>
 
-  <a href="music.html">
-    <div class="card">
-      🎵 Enter Music Library
-    </div>
-  </a>
-
-  <div class="card">
-    🔥 Featured Tracks
-  </div>
-
-  <div class="card">
-    ⚔️ Battle Themes
-  </div>
-
+  <small>Built by you • Fan project</small>
 </div>
 
 </body>
