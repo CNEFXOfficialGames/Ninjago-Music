@@ -18,5 +18,33 @@ const songs = [
   {
     title: "Ninjago Battle Music",
     url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
-  }
+  },
+  {
+    title: "Ninjago Battle Music",
+    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+  },
+  {
+    title: "Ninjago Battle Music",
+    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+  },
+  {
+    title: "Ninjago Battle Music",
+    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+  },
+  {
+    title: "Ninjago Battle Music",
+    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+  },
+  {
+    title: "Ninjago Battle Music",
+    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+  },
+  {
+    title: "Ninjago Battle Music",
+    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+  },
+  {
+    title: "Ninjago Battle Music",
+    url: "https://www.youtube.com/results?search_query=ninjago+battle+music"
+  },
 ];
