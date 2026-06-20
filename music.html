@@ -82,12 +82,12 @@ header p {
 
 <header>
   <h1>🎧 Ninjago-Music</h1>
-  <p>Trending soundtracks</p>
+  <p>Full soundtrack library</p>
 </header>
 
 <input class="search" type="text" placeholder="Search songs..." onkeyup="searchSongs(this.value)">
 
-<div class="label">🔥 Trending (Top 5)</div>
+<div class="label">🎵 All songs</div>
 
 <div class="grid" id="grid"></div>
 
@@ -100,7 +100,7 @@ function render(list) {
   const grid = document.getElementById("grid");
   grid.innerHTML = "";
 
-  list.slice(0, 5).forEach(song => {
+  list.forEach(song => {   // ✅ REMOVED slice(0, 5)
     const card = document.createElement("div");
     card.className = "card";
     card.innerText = song.title;
