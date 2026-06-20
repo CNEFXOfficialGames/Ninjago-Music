@@ -12,8 +12,8 @@ const songs = [
     url: "https://www.youtube.com/watch?v=Eqf4Hz94fF0"
   },
   {
-    title: "Lloyd Theme",
-    url: "https://www.youtube.com/results?search_query=lloyd+ninjago+theme"
+    title: "Weekend Whip (Season 4)",
+    url: "https://www.youtube.com/watch?v=AgYl0zHsy_A"
   },
   {
     title: "Ninjago Battle Music",
