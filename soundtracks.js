@@ -8,8 +8,8 @@ const songs = [
     url: "https://www.youtube.com/watch?v=TMw9UNXVDG0"
   },
   {
-    title: "Jay Theme",
-    url: "https://www.youtube.com/results?search_query=jay+ninjago+theme"
+    title: "Weekend Whip (Season 3 Rebooted)",
+    url: "https://www.youtube.com/watch?v=Eqf4Hz94fF0"
   },
   {
     title: "Lloyd Theme",
