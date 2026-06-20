@@ -1,7 +1,7 @@
 const songs = [
   {
-    title: "Ninjago Theme",
-    url: "https://www.youtube.com/results?search_query=ninjago+theme"
+    title: "Found My Place (The Lego   Ninjago Movie)",
+    url: "https://www.youtube.com/watch?v=PFQs2iHi3Ew"
   },
   {
     title: "Kai Theme",
